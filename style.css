@@ -1,0 +1,79 @@
+/* defining color values as variables to use in the styelsheet */
+:root{
+    --white: #ffffff;
+    --brightblue: #d6e2f0;
+    --greyblue: #68778d;
+    --darkblue: #1f3251;
+}
+
+/* Reset all margins and paddings etc */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Optional but recommended */
+}
+
+/* defining background color */
+body{
+    background-color: var(--brightblue);
+    font-family: "Outfit", "Young Serif", serif;
+    font-size: 1rem;
+    min-height: 100svh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card{
+    /* card properties like width and height taken from figma design file */
+    max-width: 320px;
+    max-height: 499px;
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow:0px 10px 40px #6e6e6e2d;
+}
+
+.image{
+    margin-bottom: 24px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.paragraph1{
+    /* define paddings */
+    padding-left: 16px;
+    padding-right: 16px;
+    
+    /* define appearance of font */
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--darkblue);
+}
+
+.paragraph2{
+    /* define margins and paddings */
+    margin-bottom: 40px;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    /* define appearance of font */
+    text-align: center;
+    font-weight: 300;
+    color: var(--greyblue);
+}
+
+/* footer div{
+    margin-top: 16px;
+    text-align: center;
+} */
